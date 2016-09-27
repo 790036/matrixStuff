@@ -7,13 +7,15 @@ import static java.lang.System.*;
 
 public class MatrixSum
 {
-	/*
-	 *  method searchMat should determine how many
-	 *  occurrences of toFind exist in the matrix mat
-	 */
 	public static int sumMat( int[][] mat )
 	{
-		return 0;
+		int amt = 0;
+		for(int i = 0; i < mat.length; i++){
+		    for(int x = 0; x < mat[i].length; x++){
+		        amt = amt + mat[i][x];
+		      }
+		  }
+		return amt;
 	}
 
 	public static void main(String args[])
